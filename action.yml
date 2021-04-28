@@ -9,6 +9,9 @@ inputs:
     description: 'length of the sha1'
     default: '7'
     required: false
+  sha1:
+    description: 'sha1 to use'
+    required: false
 outputs:
   sha:
     description: 'shortened SHA'

@@ -3,7 +3,7 @@ import {shorten} from './shorten'
 
 async function run(): Promise<void> {
   try {
-    const sha = core.getInput('sha1')
+    const sha = core.getInput('sha12')
     core.debug(`Sha:    ${sha}`)
     const length = Number(core.getInput('length'))
     core.debug(`Length: ${length}`)

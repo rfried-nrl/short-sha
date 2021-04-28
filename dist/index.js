@@ -41,8 +41,7 @@ const shorten_1 = __webpack_require__(872);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const sha = core.getInput('sha12');
-            core.debug(`Sha12:    ${core.getInput('sha12')}`);
+            const sha = core.getInput('sha');
             core.debug(`Sha:    ${sha}`);
             const length = Number(core.getInput('length'));
             core.debug(`Length: ${length}`);

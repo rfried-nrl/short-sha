@@ -4,9 +4,9 @@ import {shorten} from './shorten'
 
 async function run(): Promise<void> {
   try {
-    const sha = context.sha
+    const sha = core.getInput('sha1')
     core.debug(`Sha:    ${sha}`)
-    const length = Number(core.getInput('length'))
+    const length = Number()
     core.debug(`Length: ${length}`)
     const shortSha = shorten(sha, length)
     core.debug(`Output: ${shortSha}`)
